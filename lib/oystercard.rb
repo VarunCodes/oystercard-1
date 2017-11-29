@@ -1,4 +1,4 @@
-require_relative 'journey'
+	require_relative 'journey'
 
 class Oystercard
 	attr_reader :balance
@@ -21,7 +21,6 @@ class Oystercard
 
 	def touch_in(station)
     raise "Insufficient funds" if balance < MINIMUM_FARE
-		@in_journey = true
 		@entry_station = station
 	end
 
